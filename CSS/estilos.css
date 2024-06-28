@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.titulo{
+    text-align: center;
+}
+
+@media (min-width:1170px) and (max-width:2000px){
+.contenedorD{
+    display: none;
+}
+table{
+    border: 3px solid darkcyan;
+    width: 80%;
+    border-spacing: 0;
+}
+th{
+    background-color: darkcyan;
+    color: white;
+}
+td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid darkcyan;
+}
+tr:nth-child(odd){/*even*/
+    background-color: cadetblue;
+}
+.descripcion{
+    width: 40%;
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+@media (min-width:300px) and (max-width:1169px){
+.contenedor{
+    display: none;
+}
+.contenedorD{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box{
+    border: 2px solid white;
+    background-color: #f4d35e;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+.encabezado{
+    border-bottom: 2px solid white;
+    text-align: right;
+}
+}
